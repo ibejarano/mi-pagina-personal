@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Layout from "../components/Layout/layout"
+import ModalDialog from '../components/modal-dialog'
 
 class IndexPage extends Component {
   state = {
@@ -25,27 +26,27 @@ class IndexPage extends Component {
     document.getElementById("modal").style.display = "none"
   }
   render() {
-    let indexData = this.props.data.allIndexJson.nodes[0]
-    const homeItems = indexData.home_items.map((item, idx) =>(
-        <div
-          key={idx}
-          onClick={this.openModal.bind(this, item)}
-          className={
-            this.state.smallScreen ? "grid-item-small" : "home-grid-item"
-          }
-          style={{
-            backgroundImage: `url(${item.image})`,
-            backgroundSize: "100%",
-          }}
-        ></div>
+    const { indexJson } = this.props.data
+    const homeItems = indexJson.home_items.map((item, idx) => (
+      <div
+        key={idx}
+        onClick={this.openModal.bind(this, item)}
+        className={
+          this.state.smallScreen ? "grid-item-small" : "home-grid-item"
+        }
+        style={{
+          backgroundImage: `url(${item.image})`,
+          backgroundSize: "100%",
+        }}
+      ></div>
     ))
     return (
       <Layout page={"home"}>
-        <h1 className="title">{indexData.title}</h1>
+        <h1 className="title">{indexJson.title}</h1>
         <div className="home-main">
-          <div className="text">{indexData.text}</div>
+          <div className="text">{indexJson.text}</div>
           <div className="divider"></div>
-          <h2 className="subtitle">{indexData.subtitle}</h2>
+          <h2 className="subtitle">{indexJson.subtitle}</h2>
           <div
             className={
               this.state.smallScreen
@@ -56,28 +57,7 @@ class IndexPage extends Component {
             {homeItems}
           </div>
         </div>
-        <div id="modal" className="modal" onClick={this.closeModal}>
-          <div
-            className={
-              this.state.smallScreen ? "modal-content-small" : "modal-content"
-            }
-          >
-            <span className="modal-close">&times;</span>
-            <div className="modal-grid-container">
-              <div className="modal-grid-item-left">
-                <span className="modal-title">{this.state.modal.name}</span>
-                <p className="modal-text">{this.state.modal.description}</p>
-              </div>
-              <div className="modal-grid-item-right">
-                <img
-                  src={this.state.modal.image}
-                  alt={this.state.modal.name}
-                  className="modal-image"
-                ></img>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ModalDialog close={this.closeModal} {...this.state} />
       </Layout>
     )
   }
@@ -86,17 +66,15 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    allIndexJson {
-      nodes {
-        title
+    indexJson {
+      title
+      description
+      text
+      subtitle
+      home_items {
+        name
         description
-        text
-        subtitle
-        home_items {
-          name
-          description
-          image
-        }
+        image
       }
     }
   }

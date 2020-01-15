@@ -12,7 +12,9 @@ const ContactPage = ({ data }) => {
             alt={item.name}
             className="contact-icon"
           ></img>
+    <p>
           {item.uri}
+    </p>
         </div>
   ) )
   return (

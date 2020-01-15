@@ -3,18 +3,18 @@
     "__comments": "Puedo poner mi foto y algun contacto adicional",
     "title": "Sobre mi",
     "description": "Bienvenid@ a mi pagina",
-    "text": "We're on a mission to make the web beautiful. Through our passion for web design & development, we're meeting our goal one client at a time.",
-    "subtitle": "Quizas encuentre algo que poner aca",
+    "text": "Me recibi de Ing. Mecanico con especialidad en mecanica computacional, desde el anio 2017 que me encuentro trabajando desarrollando algoritmos para resolver problemas numericos en C++ y python. A partir del 2018 comence a estudiar desarrollo web, con foco en tecnologias Front-End. Actualmente estoy buscando un cambio de carrera orientado a este campo tecnologico.",
+    "subtitle": "Resumen",
     "name_icon": "images/name.svg",
     "title_icon": "images/title.svg",
-    "mail_icon": "images/mail.svg",
-    "twitter_icon": "images/twitter.svg",
+    "mail_icon": "images/title.svg",
+    "twitter_icon": "images/title.svg",
     "personal_info": [
       {
-        "name": "Mustard",
-        "title": "Backend / Marketing",
-        "email": "max@crafty.co",
-        "twitter": "@Max_Mustard",
+        "name": "Ignacio Bejarano",
+        "title": "Ingeniero Mecánico",
+        "email": "Cursando 3er año de Análisis de Sistemas",
+        "twitter": " Aspirante a Full-Time Front-End Dev",
         "image": "images/man.svg"
       }
     ]
