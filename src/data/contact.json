@@ -1,0 +1,31 @@
+[
+  {
+    "__comments": "",
+    "title": "Contacto",
+    "description": "Bienvenid@ a mi pagina personal",
+    "text": "",
+    "email": "ignbejarano@gmail.com",
+    "phone": "(011) 15-3310-4298",
+    "twitter": "@IgnacioBejara13",
+    "email_icon": "images/email.svg",
+    "phone_icon": "images/phone.svg",
+    "twitter_icon": "images/twitter.svg",
+    "contact_info": [
+      {
+        "name": "phone",
+        "uri": "(011) 15-3310-4298",
+        "icon": "images/phone.svg"
+      },
+      {
+        "name": "email",
+        "uri": "ignbejarano@gmail.com",
+        "icon": " images/email.svg"
+      },
+      {
+        "name": "twitter",
+        "uri": "@IgnacioBejara13",
+        "icon": "images/twitter.svg"
+      }
+    ]
+  }
+]

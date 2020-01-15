@@ -1,0 +1,30 @@
+[
+  {
+    "__comments": "Aca especifico los proyectos",
+    "title": "Mis proyectos personales",
+    "description": "Bienvenid@ a mi pagina web!",
+    "text": "Algunos de mis proyectos para aprender y mejorar mis habilidades en tecnologias web.",
+    "work_items": [
+      {
+        "name": "Issue Tracker",
+        "image": "images/goldenrose.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
+      },
+      {
+        "name": "E-shop",
+        "image": "images/hipster.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
+      },
+      {
+        "name": "Blog",
+        "image": "images/holdfast.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
+      },
+      {
+        "name": "Web Apps Varias",
+        "image": "images/freedom.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
+      }
+    ]
+  }
+]
