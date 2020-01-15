@@ -1,20 +1,10 @@
 import React, { Component } from "react"
 import Layout from "../components/Layout/layout"
-import ModalDialog from '../components/modal-dialog'
+import ModalDialog from "../components/modal-dialog"
 
 class IndexPage extends Component {
   state = {
-    smallScreen: false,
-    modal: { name: "" },
-  }
-
-  componentDidMount() {
-    window.addEventListener("resize", this.resize.bind(this))
-    this.resize()
-  }
-
-  resize() {
-    this.setState({ smallScreen: window.innerWidth <= 840 })
+    modal: { name: "" }
   }
 
   openModal(e) {
@@ -27,13 +17,22 @@ class IndexPage extends Component {
   }
   render() {
     const { indexJson } = this.props.data
-    const homeItems = indexJson.home_items.map((item, idx) => (
+    const frontendItems = indexJson.frontend.map((item, idx) => (
       <div
         key={idx}
         onClick={this.openModal.bind(this, item)}
-        className={
-          this.state.smallScreen ? "grid-item-small" : "home-grid-item"
-        }
+        className="home-grid-item"
+        style={{
+          backgroundImage: `url(${item.image})`,
+          backgroundSize: "100%",
+        }}
+      ></div>
+    ))
+    const backendItems = indexJson.backend.map((item, idx) => (
+      <div
+        key={idx}
+        onClick={this.openModal.bind(this, item)}
+        className="home-grid-item"
         style={{
           backgroundImage: `url(${item.image})`,
           backgroundSize: "100%",
@@ -46,15 +45,9 @@ class IndexPage extends Component {
         <div className="home-main">
           <div className="text">{indexJson.text}</div>
           <div className="divider"></div>
-          <h2 className="subtitle">{indexJson.subtitle}</h2>
-          <div
-            className={
-              this.state.smallScreen
-                ? "grid-container-small"
-                : "home-grid-container"
-            }
-          >
-            {homeItems}
+          <div className="home-grid-container">
+            <div className="home-grid-container-skills">{frontendItems}</div>
+            <div className="home-grid-container-skills">{backendItems}</div>
           </div>
         </div>
         <ModalDialog close={this.closeModal} {...this.state} />
@@ -71,7 +64,12 @@ export const query = graphql`
       description
       text
       subtitle
-      home_items {
+      frontend {
+        name
+        description
+        image
+      }
+      backend {
         name
         description
         image
