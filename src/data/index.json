@@ -8,44 +8,44 @@
     "frontend": [
       {
         "name": "HTML",
-        "image": "images/goldenrose.png",
+        "image": "images/html5.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
       {
         "name": "CSS",
-        "image": "images/hipster.png",
+        "image": "images/css3.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
       {
         "name": "Javascript",
-        "image": "images/freedom.png",
+        "image": "images/javascript.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
       {
         "name": "React",
-        "image": "images/freedom.png",
+        "image": "images/react.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       }
     ],
     "backend": [
       {
         "name": "Node.js",
-        "image": "images/goldenrose.png",
+        "image": "images/node.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
       {
         "name": "Express.js",
-        "image": "images/hipster.png",
+        "image": "images/express.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
       {
         "name": "mongoDB",
-        "image": "images/freedom.png",
+        "image": "images/mongodb.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
       {
         "name": "GraphQL",
-        "image": "images/freedom.png",
+        "image": "images/graphql.svg",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       }
     ]

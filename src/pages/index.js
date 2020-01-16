@@ -24,7 +24,7 @@ class IndexPage extends Component {
         className="home-grid-item"
         style={{
           backgroundImage: `url(${item.image})`,
-          backgroundSize: "100%",
+          backgroundSize: "cover",
         }}
       ></div>
     ))
@@ -35,7 +35,7 @@ class IndexPage extends Component {
         className="home-grid-item"
         style={{
           backgroundImage: `url(${item.image})`,
-          backgroundSize: "100%",
+          backgroundSize: "cover",
         }}
       ></div>
     ))
@@ -46,7 +46,9 @@ class IndexPage extends Component {
           <div className="text">{indexJson.text}</div>
           <div className="divider"></div>
           <div className="home-grid-container">
+            <h1 className="home-grid-container-title">Front End</h1>
             <div className="home-grid-container-skills">{frontendItems}</div>
+            <h1 className="home-grid-container-title">Back End</h1>
             <div className="home-grid-container-skills">{backendItems}</div>
           </div>
         </div>
