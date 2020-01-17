@@ -8,21 +8,37 @@
       {
         "name": "Issue Tracker",
         "image": "images/goldenrose.png",
+        "stack": {
+          "type": "Full Stack",
+          "techs": ["node", "react", "mongodb", "express"]
+        },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
       {
         "name": "E-shop",
         "image": "images/hipster.png",
+        "stack": {
+          "type": "Full Stack",
+          "techs": ["node", "graphql", "react", "prisma", "nextjs"]
+        },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
       {
         "name": "Blog",
         "image": "images/holdfast.png",
+        "stack": {
+          "type": "Front-End",
+          "techs": ["react", "gatsby"]
+        },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
       {
         "name": "Web Apps Varias",
         "image": "images/freedom.png",
+        "stack": {
+          "type": "Front-End",
+          "techs": ["react"]
+        },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       }
     ]

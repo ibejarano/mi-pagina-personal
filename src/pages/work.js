@@ -19,17 +19,23 @@ class WorkPage extends Component {
   }
 
   render() {
-    let workData = this.props.data.allWorkJson.nodes[0]
+    let workData = this.props.data.workJson
     const workItems = workData.work_items.map((item, idx) => (
       <div
         key={idx}
         onClick={this.openModal.bind(this, item)}
         className="work-item"
-        style={{
-          backgroundImage: `url(${item.image})`,
-          backgroundSize: "100%",
-        }}
-      ></div>
+      >
+        <div className="work-item-text">
+          <h1>{item.name}</h1>
+          <h2>{item.stack.type}</h2>
+        </div>
+        <div className="work-item-techs">
+          {[1, 2, 3, 4].map((num, idx) => (
+            <div className="work-item-tech-item">{num}</div>
+          ))}
+        </div>
+      </div>
     ))
 
     return (
@@ -37,7 +43,7 @@ class WorkPage extends Component {
         <h1 className="title">{workData.title}</h1>
         <div className="text">{workData.text}</div>
         <div className="work-container">{workItems}</div>
-          <ModalDialog close={this.closeModal} {...this.state} />
+        <ModalDialog close={this.closeModal} {...this.state} />
       </Layout>
     )
   }
@@ -46,16 +52,18 @@ export default WorkPage
 
 export const query = graphql`
   query {
-    allWorkJson {
-      nodes {
-        id
-        title
+    workJson {
+      id
+      title
+      description
+      text
+      work_items {
+        name
         description
-        text
-        work_items {
-          name
-          description
-          image
+        image
+        stack {
+          type
+          techs
         }
       }
     }
