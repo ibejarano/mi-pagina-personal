@@ -1,19 +1,12 @@
 import React, { Component } from "react"
 import Layout from "../components/Layout/layout"
+import ModalDialog from "../components/modal-dialog"
+
+import "../styles/work.css"
 
 class WorkPage extends Component {
   state = {
-    smallScreen: false,
     modal: { name: "" },
-  }
-
-  componentDidMount() {
-    window.addEventListener("resize", this.resize.bind(this))
-    this.resize()
-  }
-
-  resize() {
-    this.setState({ smallScreen: window.innerWidth <= 840 })
   }
 
   openModal(e) {
@@ -28,54 +21,23 @@ class WorkPage extends Component {
   render() {
     let workData = this.props.data.allWorkJson.nodes[0]
     const workItems = workData.work_items.map((item, idx) => (
-        <div
-          key={idx}
-          onClick={this.openModal.bind(this, item)}
-          className={
-            this.state.smallScreen ? "grid-item-small" : "work-grid-item"
-          }
-          style={{
-            backgroundImage: `url(${item.image})`,
-            backgroundSize: "100%",
-          }}
-        ></div>
-    )) 
+      <div
+        key={idx}
+        onClick={this.openModal.bind(this, item)}
+        className="work-item"
+        style={{
+          backgroundImage: `url(${item.image})`,
+          backgroundSize: "100%",
+        }}
+      ></div>
+    ))
 
     return (
       <Layout page={"work"}>
         <h1 className="title">{workData.title}</h1>
         <div className="text">{workData.text}</div>
-        <div
-          className={
-            this.state.smallScreen
-              ? "grid-container-small"
-              : "work-grid-container"
-          }
-        >
-          {workItems}
-        </div>
-        <div id="modal" className="modal" onClick={this.closeModal}>
-          <div
-            className={
-              this.state.smallScreen ? "modal-content-small" : "modal-content"
-            }
-          >
-            <span className="modal-close">&times;</span>
-            <div className="modal-grid-container">
-              <div className="modal-grid-item-left">
-                <span className="modal-title">{this.state.modal.name}</span>
-                <p className="modal-text">{this.state.modal.description}</p>
-              </div>
-              <div className="modal-grid-item-right">
-                <img
-                  src={this.state.modal.image}
-                  alt={this.state.modal.name}
-                  className="modal-image"
-                ></img>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div className="work-container">{workItems}</div>
+          <ModalDialog close={this.closeModal} {...this.state} />
       </Layout>
     )
   }

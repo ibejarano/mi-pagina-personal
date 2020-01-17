@@ -1,0 +1,18 @@
+.work-container {
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.work-item {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2rem;
+  box-shadow: 4px 4px 10px #888888;
+  border-radius: 8px;
+  cursor: pointer;
+}

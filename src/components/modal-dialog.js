@@ -4,10 +4,10 @@ const ModalDialog = props => {
   const { name, description, image } = props.modal
   return (
     <div id="modal" className="modal">
-      <div
-        className={props.smallScreen ? "modal-content-small" : "modal-content"}
-      >
-        <button className="modal-close" onClick={props.close}>&times;</button>
+      <div className="modal-content">
+        <button className="modal-close" onClick={props.close}>
+          &times;
+        </button>
         <div className="modal-grid-container">
           <div className="modal-grid-item-left">
             <span className="modal-title">{name}</span>
