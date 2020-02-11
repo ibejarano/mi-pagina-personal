@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import menuIcon from "../../images/menu.svg"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class Header extends Component {
   openSidebar() {
@@ -42,26 +43,26 @@ class Header extends Component {
       </div>
     ) : (
       <header className="header">
-        <Link to="/">
+        <AniLink fade to="/">
           <button className={page === "home" ? "button-active" : "button"}>
             Home
           </button>
-        </Link>
-        <Link to="/work">
+        </AniLink>
+        <AniLink fade to="/work">
           <button className={page === "work" ? "button-active" : "button"}>
             Proyectos
           </button>
-        </Link>
-        <Link to="/about">
+        </AniLink>
+        <AniLink fade to="/about">
           <button className={page === "about" ? "button-active" : "button"}>
             Sobre Mi
           </button>
-        </Link>
-        <Link to="/contact">
+        </AniLink>
+        <AniLink fade to="/contact">
           <button className={page === "contact" ? "button-active" : "button"}>
             Contacto
           </button>
-        </Link>
+        </AniLink>
       </header>
     )
   }
