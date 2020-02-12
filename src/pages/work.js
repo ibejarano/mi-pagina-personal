@@ -31,8 +31,8 @@ class WorkPage extends Component {
           <h2>{item.stack.type}</h2>
         </div>
         <div className="work-item-techs">
-          {[1, 2, 3, 4].map((num, idx) => (
-            <div className="work-item-tech-item">{num}</div>
+          {item.stack.techImage.map((tech, idx) => (
+            <img className="work-item-tech-item" src={`images/${tech}.svg`}/>
           ))}
         </div>
       </div>
@@ -63,7 +63,7 @@ export const query = graphql`
         image
         stack {
           type
-          techs
+          techImage
         }
       }
     }

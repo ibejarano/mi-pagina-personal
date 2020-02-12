@@ -245,13 +245,14 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 20% 80%;
   max-width: 1000px;
   justify-items: center;
 }
 
 .home-grid-container-title {
   grid-row: 1 / 2;
+  margin-bottom: 1rem;
 }
 .home-grid-container-skills {
   display: flex;
@@ -284,7 +285,7 @@ body {
   transition: 0.1s ease-in-out;
 }
 .home-grid-item:hover {
-  transform: translate(20px, -20px);
+  transform: scale(1.08);
 }
 .grid-item-small {
   min-height: 280px;

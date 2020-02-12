@@ -10,7 +10,7 @@
         "image": "images/goldenrose.png",
         "stack": {
           "type": "Full Stack",
-          "techs": ["node", "react", "mongodb", "express"]
+          "techImage": ["node", "react", "mongodb", "express"]
         },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
@@ -19,7 +19,7 @@
         "image": "images/hipster.png",
         "stack": {
           "type": "Full Stack",
-          "techs": ["node", "graphql", "react", "prisma", "nextjs"]
+          "techImage": ["node", "graphql", "react", "prisma", "nextjs"]
         },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
@@ -28,7 +28,7 @@
         "image": "images/holdfast.png",
         "stack": {
           "type": "Front-End",
-          "techs": ["react", "gatsby"]
+          "techImage": ["react", "gatsby"]
         },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       },
@@ -37,7 +37,7 @@
         "image": "images/freedom.png",
         "stack": {
           "type": "Front-End",
-          "techs": ["react"]
+          "techImage": ["react"]
         },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
       }
