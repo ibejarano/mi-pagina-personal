@@ -12,7 +12,8 @@
           "type": "Full Stack",
           "techImage": ["node", "react", "mongodb", "express"]
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
+        "description": "Issue Tracker es una aplicacion web full stack, la aplicacion web permite al usuario u organizacion, crear 'Issues' o Tickets para determinado proyecto, y darles un seguimiento, consignando un estado, prioridad y responsable en la resolucion de dicho ticket. La App permite registro/login de usuarios, asignacion de roles y registro de actividades de los usuarios entre otras funcionalidades.",
+        "techDetails": ["React","React Router", "Node", "Express", "Material UI", "MongoDB"]
       },
       {
         "name": "E-shop",
@@ -21,7 +22,8 @@
           "type": "Full Stack",
           "techImage": ["node", "graphql", "react", "prisma", "nextjs"]
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. ",
+        "techDetails": ["Node", "Prisma", "Next.js (React SSR)", "Yoga GraphQL", "Styled Components"]
       },
       {
         "name": "Blog",
@@ -30,7 +32,8 @@
           "type": "Front-End",
           "techImage": ["react", "gatsby"]
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. ",
+        "techDetails": ["Gatsby", "React", "Styled components", "Gatsby Plugins"]
       },
       {
         "name": "Web Apps Varias",
@@ -39,7 +42,8 @@
           "type": "Front-End",
           "techImage": ["react"]
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. ",
+        "techDetails": ["Varias"] 
       }
     ]
   }

@@ -1,7 +1,8 @@
 import React from "react"
 
 const ModalDialog = props => {
-  const { name, description, image } = props.modal
+  const { name, description, image, techDetails } = props.modal
+  console.log(props)
   return (
     <div id="modal" className="modal">
       <div className="modal-content">
@@ -13,9 +14,16 @@ const ModalDialog = props => {
             <span className="modal-title">{name}</span>
             <p className="modal-text">{description}</p>
           </div>
+          {techDetails && 
           <div className="modal-grid-item-right">
-            <img src={image} alt={name} className="modal-image"></img>
+            <span className="modal-subtitle">Tecnologias y principales librerias</span>
+            <ul className="modal-text">
+              {techDetails.map((tech, idx) => (
+                <li className="modal-text-list" key={idx}>{tech}</li>
+              ))} 
+            </ul>
           </div>
+          }
         </div>
       </div>
     </div>
