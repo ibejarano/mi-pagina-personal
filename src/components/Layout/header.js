@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 import menuIcon from "../../images/menu.svg"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
+import "./header.css"
+
 class Header extends Component {
   openSidebar() {
     document.getElementById("sidebar").style.display = "block"
@@ -28,16 +30,13 @@ class Header extends Component {
             <img src={menuIcon} alt="Menu" className="menu-icon"></img>
           </button>
           <Link to="/" className="sidebar-link">
-            <button className="sidebar-item">Home</button>
+            <button className="sidebar-item">Inicio</button>
           </Link>
           <Link to="/work" className="sidebar-link">
-            <button className="sidebar-item">Proyectos</button>
+            <button className="sidebar-item">Skills</button>
           </Link>
           <Link to="/about" className="sidebar-link">
-            <button className="sidebar-item">Sobre mi</button>
-          </Link>
-          <Link to="/contact" className="sidebar-link">
-            <button className="sidebar-item">Contacto</button>
+            <button className="sidebar-item">Proyectos</button>
           </Link>
         </div>
       </div>
@@ -45,22 +44,17 @@ class Header extends Component {
       <header className="header">
         <AniLink fade to="/">
           <button className={page === "home" ? "button-active" : "button"}>
-            Home
+            Inicio
           </button>
         </AniLink>
         <AniLink fade to="/work">
           <button className={page === "work" ? "button-active" : "button"}>
-            Proyectos
+            Skills
           </button>
         </AniLink>
         <AniLink fade to="/about">
           <button className={page === "about" ? "button-active" : "button"}>
-            Sobre Mi
-          </button>
-        </AniLink>
-        <AniLink fade to="/contact">
-          <button className={page === "contact" ? "button-active" : "button"}>
-            Contacto
+           Proyectos 
           </button>
         </AniLink>
       </header>

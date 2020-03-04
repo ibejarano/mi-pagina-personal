@@ -1,52 +1,18 @@
 [
   {
     "__comments": "These are some comments",
-    "title": "Hola! Soy Ignacio Bejarano. Full Stack Developer",
+    "title": "Hola! Soy Ignacio Bejarano",
     "description": "Bienvenido a mi pagina web.",
-    "text": "Bienvenido a mi pagina web, aqui encontraras tecnologias que he estudiado por mi cuenta y proyectos en los que las he aplicado.",
+    "text": "Full Stack Dev",
     "subtitle": "Tecnologias",
-    "frontend": [
+    "data": [
       {
-        "name": "HTML",
-        "image": "images/html5.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
+        "name": "frontend",
+        "image": "images/frontend.svg"
       },
       {
-        "name": "CSS",
-        "image": "images/css3.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
-      },
-      {
-        "name": "Javascript",
-        "image": "images/javascript.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
-      },
-      {
-        "name": "React",
-        "image": "images/react.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
-      }
-    ],
-    "backend": [
-      {
-        "name": "Node.js",
-        "image": "images/node.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
-      },
-      {
-        "name": "Express.js",
-        "image": "images/express.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
-      },
-      {
-        "name": "mongoDB",
-        "image": "images/mongodb.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
-      },
-      {
-        "name": "GraphQL",
-        "image": "images/graphql.svg",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. "
+        "name": "backend",
+        "image": "images/backend.svg"
       }
     ]
   }
