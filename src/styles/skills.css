@@ -1,0 +1,61 @@
+.skills-container {
+  background: white;
+  border-radius: 50px;
+  width: 1595px;
+  height: 831px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-colums: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "frontend backend varios"
+}
+
+.skills-frontend {
+  grid-area: frontend;
+  margin: 145px 75px;
+  max-width: 300px;
+}
+.skills-backend {
+  grid-area: backend;
+  max-width: 300px;
+  margin: 145px 75px;
+}
+.skills-varios {
+  grid-area: varios;
+  max-width: 300px;
+  margin: 145px 75px;
+}
+
+.work-item {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2rem;
+  box-shadow: 4px 4px 10px #888888;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+.work-item-text {
+  background: lightblue;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.work-item-text > * {
+  margin: 0 auto;
+}
+.work-item-techs {
+  display: flex;
+  flex-grow: 4;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.work-item-tech-item {
+  width: 70px;
+  height: 70px;
+  margin: 15px;
+}

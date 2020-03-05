@@ -32,10 +32,10 @@ class Header extends Component {
           <Link to="/" className="sidebar-link">
             <button className="sidebar-item">Inicio</button>
           </Link>
-          <Link to="/work" className="sidebar-link">
+          <Link to="/skills" className="sidebar-link">
             <button className="sidebar-item">Skills</button>
           </Link>
-          <Link to="/about" className="sidebar-link">
+          <Link to="/work" className="sidebar-link">
             <button className="sidebar-item">Proyectos</button>
           </Link>
         </div>
@@ -47,12 +47,12 @@ class Header extends Component {
             Inicio
           </button>
         </AniLink>
-        <AniLink fade to="/work">
+        <AniLink fade to="/skills">
           <button className={page === "work" ? "button-active" : "button"}>
             Skills
           </button>
         </AniLink>
-        <AniLink fade to="/about">
+        <AniLink fade to="/work">
           <button className={page === "about" ? "button-active" : "button"}>
            Proyectos 
           </button>
