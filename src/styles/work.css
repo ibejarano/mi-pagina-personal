@@ -1,17 +1,18 @@
 .work-container {
-  padding-left: 2%;
-  padding-right: 2%;
-  max-width: 700px;
-  margin: 0 auto;
+  background: white;
+  border-radius: 50px;
+  width: 1595px;
+  height: 831px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-item {
   width: 300px;
   height: 300px;
-  margin-bottom: 2rem;
+  margin: 1rem 4rem;
   box-shadow: 4px 4px 10px #888888;
   border-radius: 8px;
   cursor: pointer;
@@ -25,9 +26,16 @@
   display: flex;
   flex-direction: column;
 }
-.work-item-text >*{
-  margin:0 auto;
+.work-item-text > * {
+  margin: 0 auto;
 }
+
+.work-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .work-item-techs {
   display: flex;
   flex-grow: 4;
@@ -38,5 +46,5 @@
 .work-item-tech-item {
   width: 70px;
   height: 70px;
-  margin:15px;
+  margin: 15px;
 }

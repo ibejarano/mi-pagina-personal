@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Layout from "../components/Layout/layout"
 
 import "../styles/skills.css"
+import "../styles/content.css"
 
 class WorkPage extends Component {
 
@@ -26,7 +27,7 @@ class WorkPage extends Component {
 
     return (
       <Layout page={"work"}>
-        <div className="skills-container">
+        <div className="content-container">
           <div className="skills-frontend">
             <h1>Front End</h1>
             <p>Me gusta realizar páginas web desde cero, recorriendo el proceso de diseño (Figma) hacia el desarrollo. gusta hacer cosas</p>

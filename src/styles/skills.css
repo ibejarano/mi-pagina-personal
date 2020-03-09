@@ -5,10 +5,9 @@
   height: 831px;
   margin: 0 auto;
   display: grid;
-  grid-template-colums: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas:
-  "frontend backend varios"
+  grid-template-areas: "frontend backend varios";
 }
 
 .skills-frontend {
