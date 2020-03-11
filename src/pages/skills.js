@@ -79,7 +79,6 @@ export const query = graphql`
       work_items {
         name
         description
-        image
         stack {
           type
         }

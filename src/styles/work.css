@@ -31,11 +31,18 @@
   margin: 0 auto;
 }
 
-.work-cards {
+.card-works-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
 }
+
+.card-work-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  max-width: 300px;
+}
+
 
 .work-item-techs {
   display: flex;

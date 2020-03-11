@@ -7,42 +7,56 @@
     "work_items": [
       {
         "name": "Issue Tracker",
-        "image": "images/goldenrose.png",
         "stack": {
           "type": "Full Stack",
-          "techs": ["node", "react", "mongodb", "express"]
+          "techs": [ "React","Node.js", "Express.js", "MongoDB"]
         },
-        "description": "Issue Tracker es una aplicacion web full stack, la aplicacion web permite al usuario u organizacion, crear 'Issues' o Tickets para determinado proyecto, y darles un seguimiento, consignando un estado, prioridad y responsable en la resolucion de dicho ticket. La App permite registro/login de usuarios, asignacion de roles y registro de actividades de los usuarios entre otras funcionalidades.",
+        "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
         "techDetails": ["React","React Router", "Node", "Express", "Material UI", "MongoDB"]
       },
       {
         "name": "E-shop",
-        "image": "images/hipster.png",
         "stack": {
           "type": "Full Stack",
-          "techs": ["node", "graphql", "react", "prisma", "nextjs"]
+          "techs": ["Next.js", "Node.js", "GraphQL", "Prisma"]
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. ",
+        "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
         "techDetails": ["Node", "Prisma", "Next.js (React SSR)", "Yoga GraphQL", "Styled Components"]
       },
       {
         "name": "Blog",
-        "image": "images/holdfast.png",
         "stack": {
           "type": "Front-End",
-          "techs": ["react", "gatsby"]
+          "techs": ["React", "Gatsby"]
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. ",
+        "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
+        "techDetails": ["Gatsby", "React", "Styled components", "Gatsby Plugins"]
+      },
+      {
+        "name": "To-Do App",
+        "stack": {
+          "type": "Front-End",
+          "techs": ["React"]
+        },
+        "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
+        "techDetails": ["Gatsby", "React", "Styled components", "Gatsby Plugins"]
+      },
+      {
+        "name": "Clima App",
+        "stack": {
+          "type": "Front-End",
+          "techs": ["React"]
+        },
+        "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
         "techDetails": ["Gatsby", "React", "Styled components", "Gatsby Plugins"]
       },
       {
         "name": "Web Apps Varias",
-        "image": "images/freedom.png",
         "stack": {
           "type": "Front-End",
-          "techs": ["react"]
+          "techs": ["React"]
         },
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. ",
+        "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
         "techDetails": ["Varias"] 
       }
     ]

@@ -3,24 +3,20 @@ import Layout from "../components/Layout/layout"
 
 import "../styles/work.css"
 
+function CardWork({work}){
+  return(
+    <div className="card-work-container">
+      <h1 className="card-work-title">{work.name}</h1>
+      <h3>{work.description}</h3>
+    </div>
+  )
+}
+
 export default function WorkPage (props) {
 
     const workData = props.data.workJson
     const workItems = workData.work_items.map((item, idx) => (
-      <div
-        key={idx}
-        className="work-item"
-      >
-        <div className="work-item-text">
-          <h1>{item.name}</h1>
-          <h2>{item.stack.type}</h2>
-        </div>
-        <div className="work-item-techs">
-          {item.stack.techs.map((tech, idx) => (
-            <p className="work-item-tech-item"> {tech}</p>
-          ))}
-        </div>
-      </div>
+        <CardWork key={idx} work={item} />
     ))
 
     return (
@@ -28,7 +24,7 @@ export default function WorkPage (props) {
         <div className="work-container">
         <h1 className="work-title">{workData.title}</h1>
         <div className="work-text">{workData.text}</div>
-        <div className="work-cards">{workItems}</div>
+        <div className="card-works-container">{workItems}</div>
         </div>
       </Layout>
     )
@@ -45,7 +41,6 @@ export const query = graphql`
         name
         description
         stack {
-          type
           techs
         }
         techDetails
