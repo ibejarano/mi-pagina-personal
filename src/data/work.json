@@ -10,7 +10,7 @@
         "image": "images/goldenrose.png",
         "stack": {
           "type": "Full Stack",
-          "techImage": ["node", "react", "mongodb", "express"]
+          "techs": ["node", "react", "mongodb", "express"]
         },
         "description": "Issue Tracker es una aplicacion web full stack, la aplicacion web permite al usuario u organizacion, crear 'Issues' o Tickets para determinado proyecto, y darles un seguimiento, consignando un estado, prioridad y responsable en la resolucion de dicho ticket. La App permite registro/login de usuarios, asignacion de roles y registro de actividades de los usuarios entre otras funcionalidades.",
         "techDetails": ["React","React Router", "Node", "Express", "Material UI", "MongoDB"]
@@ -20,7 +20,7 @@
         "image": "images/hipster.png",
         "stack": {
           "type": "Full Stack",
-          "techImage": ["node", "graphql", "react", "prisma", "nextjs"]
+          "techs": ["node", "graphql", "react", "prisma", "nextjs"]
         },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. ",
         "techDetails": ["Node", "Prisma", "Next.js (React SSR)", "Yoga GraphQL", "Styled Components"]
@@ -30,7 +30,7 @@
         "image": "images/holdfast.png",
         "stack": {
           "type": "Front-End",
-          "techImage": ["react", "gatsby"]
+          "techs": ["react", "gatsby"]
         },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. ",
         "techDetails": ["Gatsby", "React", "Styled components", "Gatsby Plugins"]
@@ -40,7 +40,7 @@
         "image": "images/freedom.png",
         "stack": {
           "type": "Front-End",
-          "techImage": ["react"]
+          "techs": ["react"]
         },
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis eros imperdiet nibh tempor luctus. Maecenas efficitur augue nunc, ac suscipit nisl pretium in. ",
         "techDetails": ["Varias"] 

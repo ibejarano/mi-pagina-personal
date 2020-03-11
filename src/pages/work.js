@@ -16,8 +16,8 @@ export default function WorkPage (props) {
           <h2>{item.stack.type}</h2>
         </div>
         <div className="work-item-techs">
-          {item.stack.techImage.map((tech, idx) => (
-            <img className="work-item-tech-item" src={`images/${tech}.svg`}/>
+          {item.stack.techs.map((tech, idx) => (
+            <p className="work-item-tech-item"> {tech}</p>
           ))}
         </div>
       </div>
@@ -44,10 +44,9 @@ export const query = graphql`
       work_items {
         name
         description
-        image
         stack {
           type
-          techImage
+          techs
         }
         techDetails
       }
