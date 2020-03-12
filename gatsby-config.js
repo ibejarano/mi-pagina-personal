@@ -32,6 +32,12 @@ module.exports = {
     },
     {
       resolve:`gatsby-plugin-transition-link`,
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      }
     }
   ],
 }
