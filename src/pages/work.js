@@ -5,7 +5,7 @@ import "../styles/work.css"
 
 function CardWork({work}){
   return(
-    <div className="card-work-container">
+    <div className={`card-work-container ${work.stack.type}`}>
       <h1 className="card-work-title">{work.name}</h1>
       <p className="card-work-text">{work.description}</p>
       <ul className="card-work-stack">
@@ -13,9 +13,7 @@ function CardWork({work}){
       </ul>
       <div className="card-work-links">
         <a href="https://www.google.com.ar">Visitar Web</a>
-        <div className="card-work-source">
-          <a href="https://www.google.com.ar">Source FrontEnd</a>
-        </div>
+        <a href="https://www.google.com.ar">Source</a>
       </div>
 
     </div>
@@ -51,6 +49,7 @@ export const query = graphql`
         name
         description
         stack {
+          type
           techs
         }
         techDetails
