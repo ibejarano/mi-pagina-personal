@@ -5,25 +5,87 @@
   height: 831px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "frontend backend varios";
+  grid-template-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-rows:1fr 100px 180px 180px 1fr;
+  grid-template-areas:
+  ". . . . ."
+  "frontendhead separator backendhead separator-2 varioshead"
+  "frontendtext separator backendtext separator-2 variostext"
+  "frontendtechs separator backendtechs separator-2 variostechs";
+  ". . . . ."
+  align-items: center;
+  justify-items: center;
 }
 
-.skills-frontend {
-  grid-area: frontend;
-  margin: 145px 75px;
-  max-width: 300px;
+.frontend-head {
+  grid-area: frontendhead;
 }
+.frontend-text {
+  grid-area: frontendtext;
+}
+.frontend-techs {
+  grid-area: frontendtechs;
+}
+
+.backend-head {
+  grid-area: backendhead;
+}
+.backend-text {
+  grid-area: backendtext;
+}
+.backend-techs {
+  grid-area: backendtechs;
+}
+
+.varios-head {
+  grid-area: varioshead;
+}
+.varios-text {
+  grid-area: variostext;
+}
+.varios-techs {
+  grid-area: variostechs;
+}
+
+.separator {
+  grid-area: separator;
+  background: #663399;
+  width: 4px;
+  margin: 0;
+  margin-top: 10%;
+}
+.separator-2 {
+  grid-area: separator-2;
+  background: #663399;
+  width: 4px;
+  margin: 0;
+}
+
 .skills-backend {
   grid-area: backend;
-  max-width: 300px;
-  margin: 145px 75px;
 }
 .skills-varios {
   grid-area: varios;
+}
+
+.skills-container ul {
+  list-style-type: none;
+  display:flex;
+  flex-flow: column wrap;
+  color: #757575;
+  width: 300px;
+  font-size: 22px;
+}
+
+.skill-section-container p {
+  margin: 40px 0;
+  color: #757575;
+}
+
+.skills-container > * {
+  text-align: center;
+  margin: 0 auto;
   max-width: 300px;
-  margin: 145px 75px;
 }
 
 .work-item {
