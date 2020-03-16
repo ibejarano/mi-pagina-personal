@@ -6,8 +6,10 @@ export default function ({data:{indexJson}}) {
     <Layout page={"home"}>
       <h1 className="title">{indexJson.title}</h1>
       <h3 className="subtitle">{indexJson.text}</h3>
+      <div className="stack-images">
       <img src={indexJson.data[0].image} />
       <img src={indexJson.data[1].image} />
+    </div>
     </Layout>
   )
 }
