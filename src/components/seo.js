@@ -26,7 +26,6 @@ const SEO = ({ title, description, image, pathname, article }) => (
       }
 
       return (
-        <>
           <Helmet title={seo.title} titleTemplate={titleTemplate}>
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
@@ -49,7 +48,6 @@ const SEO = ({ title, description, image, pathname, article }) => (
             )}
             {seo.image && <meta name="twitter:image" content={seo.image} />}
           </Helmet>
-        </>
       )
     }}
   />

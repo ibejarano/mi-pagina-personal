@@ -3,9 +3,9 @@ body {
   margin: 0;
   padding: 0;
 }
-body {
-  background: linear-gradient(180deg, #090859 0%, #9D9CCC 70.83%);
-  height: 100%;
+html {
+  background: linear-gradient(180deg, #090859 0%, #9D9CCC 70.83%) no-repeat fixed;
+  background-size: cover;
 }
 .button {
   margin-left: 25px;

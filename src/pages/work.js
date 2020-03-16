@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
+import SEO from "../components/seo"
 
 import "../styles/work.css"
 
@@ -29,6 +30,7 @@ export default function WorkPage (props) {
 
     return (
       <Layout page={"work"}>
+        <SEO />
         <div className="work-container">
         <h1 className="work-title">{workData.title}</h1>
         <div className="work-text">{workData.text}</div>
