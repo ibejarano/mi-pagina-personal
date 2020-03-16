@@ -3,12 +3,9 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import "./header.css"
 
-class Header extends Component {
-  render() {
-    let page = this.props.page
-    return this.props.smallScreen ? (
-      <div>None</div>
-    ) : (
+export default function Header(props) {
+    let page = props.page
+    return  (
       <header className="header">
         <AniLink fade to="/">
           <button className={page === "home" ? "button-active" : "button"}>
@@ -27,6 +24,4 @@ class Header extends Component {
         </AniLink>
       </header>
     )
-  }
 }
-export default Header

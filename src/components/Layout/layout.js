@@ -3,28 +3,12 @@ import Header from "./header"
 import Footer from "./footer"
 
 import "./layout.css"
-class layout extends Component {
-  state = {
-    smallScreen: false,
-  }
-
-  componentDidMount() {
-    window.addEventListener("resize", this.resize.bind(this))
-    this.resize()
-  }
-
-  resize() {
-    this.setState({ smallScreen: window.innerWidth <= 840 })
-  }
-  render() {
-    const { children, page } = this.props
+export default function Layout({children, page}) {
     return (
-      <div className="main">
-        <Header page={page} smallScreen={this.state.smallScreen} />
+      <div >
+        <Header page={page} />
         <div>{children}</div>
       </div>
     )
-  }
 }
 
-export default layout
