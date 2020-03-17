@@ -9,10 +9,19 @@
         "name": "Issue Tracker",
         "stack": {
           "type": "full-stack",
-          "techs": [ "React","Node.js", "Express.js", "MongoDB"]
+          "techs": ["React", "Node.js", "Express.js", "MongoDB"]
         },
         "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
-        "techDetails": ["React","React Router", "Node", "Express", "Material UI", "MongoDB"]
+        "techDetails": [
+          "React",
+          "React Router",
+          "Node",
+          "Express",
+          "Material UI",
+          "MongoDB"
+        ],
+        "sourceUrl": "pendiente",
+        "projectUrl": "https://gallant-mccarthy-310c2c.netlify.com/"
       },
       {
         "name": "E-shop",
@@ -20,8 +29,16 @@
           "type": "full-stack",
           "techs": ["Next.js", "Node.js", "GraphQL", "Prisma"]
         },
-        "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
-        "techDetails": ["Node", "Prisma", "Next.js (React SSR)", "Yoga GraphQL", "Styled Components"]
+        "description": "App Full Stack: Plataforma para comprar y vender productos, permite cargar un carrito, computar òrdenes y realizar facturas. Ademàs tiene implementado un sistema de pagos con Stripe",
+        "techDetails": [
+          "Node",
+          "Prisma",
+          "Next.js (React SSR)",
+          "Yoga GraphQL",
+          "Styled Components"
+        ],
+        "sourceUrl": "pendiente",
+        "projectUrl": "pendiente"
       },
       {
         "name": "Blog",
@@ -29,8 +46,15 @@
           "type": "gatsby",
           "techs": ["React", "Gatsby"]
         },
-        "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
-        "techDetails": ["Gatsby", "React", "Styled components", "Gatsby Plugins"]
+        "description": "Blog personal creado con Gatsby, a partir de archivos Markdown locales se pueden agregar nuevas entradas, suscripcion con plugin Mailchimp y realizar posteos que incluyan componentes React (MDX)",
+        "techDetails": [
+          "Gatsby",
+          "React",
+          "Styled components",
+          "Gatsby Plugins"
+        ],
+        "sourceUrl": "https://github.com/ibejarano/blog-v2",
+        "projectUrl": "https://boring-payne-8a91d7.netlify.com/"
       },
       {
         "name": "To-Do App",
@@ -38,8 +62,15 @@
           "type": "react",
           "techs": ["React"]
         },
-        "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
-        "techDetails": ["Gatsby", "React", "Styled components", "Gatsby Plugins"]
+        "description": "Clàsica aplicaciòn para realizar listas To-Do. La interfaz està implementada con componentes de Material UI",
+        "techDetails": [
+          "Gatsby",
+          "React",
+          "Styled components",
+          "Gatsby Plugins"
+        ],
+        "sourceUrl": "https://github.com/ibejarano/todos",
+        "projectUrl": "pendiente"
       },
       {
         "name": "Clima App",
@@ -47,8 +78,15 @@
           "type": "react",
           "techs": ["React"]
         },
-        "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
-        "techDetails": ["Gatsby", "React", "Styled components", "Gatsby Plugins"]
+        "description": "Se ingresa la ciudad y se obtiene el pronostico horario. La informaciòn es provista por la API OpenWeather",
+        "techDetails": [
+          "Gatsby",
+          "React",
+          "Styled components",
+          "Gatsby Plugins"
+        ],
+        "sourceUrl": "https://github.com/ibejarano/weather-app",
+        "projectUrl": "pendiente"
       },
       {
         "name": "Spotify to Youtube",
@@ -56,8 +94,10 @@
           "type": "various",
           "techs": ["Node.js"]
         },
-        "description": "App Full Stack, permite registrar usuarios, asignar roles, tareas y hacer seguimientos de las mismas.",
-        "techDetails": ["Varias"] 
+        "description": "Se ingresa una playlist de Spotify y crea automàticamente otra playlist con las mismas canciones en Youtube, ideal para migraciones.",
+        "techDetails": ["Varias"],
+        "sourceUrl": "pendiente",
+        "projectUrl": "pendiente"
       }
     ]
   }

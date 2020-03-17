@@ -1,9 +1,15 @@
 .header {
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 25px;
   text-align: right;
 }
-.header button {
-  margin: 0;
+.page-link {
   color: #fff;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.page-active {
+  background: white;
+  color: violet
 }

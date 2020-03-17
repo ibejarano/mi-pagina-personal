@@ -3,25 +3,33 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import "./header.css"
 
-export default function Header(props) {
-    let page = props.page
-    return  (
-      <header className="header">
-        <AniLink fade to="/">
-          <button className={page === "home" ? "button-active" : "button"}>
-            Inicio
-          </button>
-        </AniLink>
-        <AniLink fade to="/skills">
-          <button className={page === "work" ? "button-active" : "button"}>
-            Skills
-          </button>
-        </AniLink>
-        <AniLink fade to="/work">
-          <button className={page === "about" ? "button-active" : "button"}>
-           Proyectos 
-          </button>
-        </AniLink>
-      </header>
-    )
+function setLinkClass(page, current){
+  return (page === current ? "page-active page-link" : "page-link")
+}
+
+export default function Header({ page }) {
+  return (
+    <header className="header">
+      <AniLink fade to="/" className={setLinkClass(page,'home')}>
+        <a>Inicio</a>
+      </AniLink>
+      <AniLink fade to="/skills" className={setLinkClass(page,'skills')}>
+        <a>
+          Skills
+        </a>
+      </AniLink>
+      <AniLink fade to="/work" className={setLinkClass(page,'work')}>
+        <a>
+          Proyectos
+        </a>
+      </AniLink>
+      <a
+        className="page-link"
+        href="https://boring-payne-8a91d7.netlify.com/"
+        target="_blank"
+      >
+        Blog
+      </a>
+    </header>
+  )
 }

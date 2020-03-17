@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 
 import "../styles/work.css"
 
+
 function CardWork({work}){
   return(
     <div className={`card-work-container ${work.stack.type}`}>
@@ -13,10 +14,9 @@ function CardWork({work}){
         {work.stack.techs.map(tech => (<li className="card-work-stack-tech" key={tech}>{tech}</li>))}
       </ul>
       <div className="card-work-links">
-        <a href="https://www.google.com.ar">Visitar Web</a>
-        <a href="https://www.google.com.ar">Source</a>
+        {work.projectUrl === "pendiente"? <a disable>Deploy Pendiente</a>:<a href={work.projectUrl}>Visitar Web</a>}
+        {work.sourceUrl === "pendiente"? <a disable>Source Pendiente</a>:<a href={work.sourceUrl}>Source</a>}
       </div>
-
     </div>
   )
 }
@@ -55,6 +55,8 @@ export const query = graphql`
           techs
         }
         techDetails
+        sourceUrl
+        projectUrl
       }
     }
   }
