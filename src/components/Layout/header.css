@@ -7,9 +7,11 @@
   color: #fff;
   margin: 10px;
   text-decoration: none;
+  padding: 2px 25px;
 }
 
 .page-active {
   background: white;
-  color: violet
+  border-radius: 15px;
+  color: black;
 }
