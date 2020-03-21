@@ -7,6 +7,7 @@ module.exports = {
     twitterUsername: "@IgnacioBejara13",
     siteUrl: "https://github.com/ibejarano",
   },
+  pathPrefix: "/mi-pagina-personal",
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
