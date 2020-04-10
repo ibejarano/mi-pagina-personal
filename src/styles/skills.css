@@ -11,8 +11,8 @@
   ". . . . ."
   "frontendhead separator backendhead separator-2 varioshead"
   "frontendtext separator backendtext separator-2 variostext"
-  "frontendtechs separator backendtechs separator-2 variostechs";
-  ". . . . ."
+  "frontendtechs separator backendtechs separator-2 variostechs"
+  ". . . . .";
   align-items: center;
   justify-items: center;
 }

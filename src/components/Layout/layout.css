@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Source Sans Pro';
 }
 html {
   background: linear-gradient(180deg, #090859 0%, #9D9CCC 70.83%) no-repeat fixed;
