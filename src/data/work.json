@@ -24,19 +24,13 @@
         "projectUrl": "https://gallant-mccarthy-310c2c.netlify.com/"
       },
       {
-        "name": "E-shop",
+        "name": "Administrador de Gastos",
         "stack": {
           "type": "full-stack",
-          "techs": ["Next.js", "Node.js", "GraphQL", "Prisma"]
+          "techs": ["React", "Node.js", "Express.js", "MongoDB"]
         },
-        "description": "App Full Stack: Plataforma para comprar y vender productos, permite cargar un carrito, computar òrdenes y realizar facturas. Ademàs tiene implementado un sistema de pagos con Stripe",
-        "techDetails": [
-          "Node",
-          "Prisma",
-          "Next.js (React SSR)",
-          "Yoga GraphQL",
-          "Styled Components"
-        ],
+        "description": "App Full Stack: Permite que los usuarios puedan crear distintas cuentas, registrar y distribuir gastos",
+        "techDetails": ["Node", "Styled Components"],
         "sourceUrl": "pendiente",
         "projectUrl": "pendiente"
       },
@@ -57,19 +51,14 @@
         "projectUrl": "https://boring-payne-8a91d7.netlify.com/"
       },
       {
-        "name": "To-Do App",
+        "name": "Countries App",
         "stack": {
           "type": "react",
           "techs": ["React"]
         },
-        "description": "Clàsica aplicaciòn para realizar listas To-Do. La interfaz està implementada con componentes de Material UI",
-        "techDetails": [
-          "Gatsby",
-          "React",
-          "Styled components",
-          "Gatsby Plugins"
-        ],
-        "sourceUrl": "https://github.com/ibejarano/todos",
+        "description": "Aplicacion para visualizar distintos paises y su informacion principal",
+        "techDetails": ["React"],
+        "sourceUrl": "https://github.com/ibejarano/react-countries",
         "projectUrl": "pendiente"
       },
       {
@@ -79,12 +68,7 @@
           "techs": ["React"]
         },
         "description": "Se ingresa la ciudad y se obtiene el pronostico horario. La informaciòn es provista por la API OpenWeather",
-        "techDetails": [
-          "Gatsby",
-          "React",
-          "Styled components",
-          "Gatsby Plugins"
-        ],
+        "techDetails": ["React"],
         "sourceUrl": "https://github.com/ibejarano/weather-app",
         "projectUrl": "pendiente"
       },
