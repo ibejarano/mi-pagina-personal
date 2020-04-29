@@ -1,13 +1,13 @@
 .work-container {
   background: white;
   border-radius: 50px;
-  width: 1595px;
-  height: 831px;
+  width: 90%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 2em auto;
+  padding: 0 1em;
 }
 
 .work-item-text > * {
@@ -20,33 +20,33 @@
   justify-content: space-evenly;
 }
 
-
 .card-work-container {
   display: flex;
-  margin-bottom: 24px;
+  margin: 0.25em;
   flex-flow: column nowrap;
   justify-content: center;
   max-width: 450px;
-  height: 300px;
   border-radius: 25px;
+  padding: 2em;
 }
 .card-work-container.full-stack {
-  background: linear-gradient(180deg, #264DE4 0%, #75AC64 100%);
+  background: linear-gradient(180deg, #264de4 0%, #75ac64 100%);
 }
 .card-work-container.react {
-  background: #264DE4;
+  background: #264de4;
 }
 .card-work-container.gatsby {
   background: #663399;
 }
 .card-work-container.various {
-  background: #F16529;
+  background: #f16529;
 }
 
 .card-work-title {
   font-size: 36px;
   margin: 0 auto;
   color: white;
+  text-align: center;
 }
 
 .card-work-text {
@@ -58,18 +58,18 @@
 
 .card-work-stack {
   list-style-type: none;
-  padding: 0px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin: 0;
+  margin: 1em auto;
 }
 
 .card-work-stack-tech {
   background: white;
   color: black;
   border-radius: 25px;
-  padding: 5px 15px;
+  padding: 5px 10px;
+  margin: 0.2em 0.1em;
 }
 
 .card-work-links {
@@ -78,25 +78,25 @@
   justify-content: space-around;
 }
 
-.card-work-source  {
+.card-work-source {
   margin: auto;
-  width:100%;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
 }
 
-.card-work-source a  {
+.card-work-source a {
   width: 200px;
 }
 
-.card-work-links a{
+.card-work-links a {
   text-decoration: none;
   color: white;
-  background: #3550DF;
+  background: #3550df;
   padding: 5px 20px;
   border: 2px solid white;
   border-radius: 20px;
-  box-shadow: -5px 5px #00116A;
+  box-shadow: -5px 5px #00116a;
 }
 
 .work-title {
@@ -105,6 +105,7 @@
 
 .work-text {
   font-size: 24px;
+  margin-bottom: 1.5em;
 }
 
 .work-item-techs {
