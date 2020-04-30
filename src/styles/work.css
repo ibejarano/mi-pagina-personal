@@ -1,12 +1,11 @@
 .work-container {
   background: white;
   border-radius: 50px;
-  width: 90%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin: 2em auto;
+  margin: 2em;
   padding: 0 1em;
 }
 
@@ -22,12 +21,12 @@
 
 .card-work-container {
   display: flex;
-  margin: 0.25em;
+  margin: 0.4em;
   flex-flow: column nowrap;
   justify-content: center;
   max-width: 450px;
   border-radius: 25px;
-  padding: 2em;
+  padding: 1em;
 }
 .card-work-container.full-stack {
   background: linear-gradient(180deg, #264de4 0%, #75ac64 100%);
@@ -43,7 +42,7 @@
 }
 
 .card-work-title {
-  font-size: 36px;
+  font-size: 24px;
   margin: 0 auto;
   color: white;
   text-align: center;
@@ -100,11 +99,9 @@
 }
 
 .work-title {
-  font-size: 48px;
 }
 
 .work-text {
-  font-size: 24px;
   margin-bottom: 1.5em;
 }
 

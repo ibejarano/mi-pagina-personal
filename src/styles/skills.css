@@ -1,99 +1,45 @@
 .skills-container {
   background: white;
   border-radius: 50px;
-  width: 90%;
-  margin: 2em auto;
-  padding: 0 2em;
-  display: grid;
-  grid-template-columns: 1fr 10px 1fr 10px 1fr;
-  grid-template-rows: 1fr 100px 180px 180px 1fr;
-  grid-template-areas:
-    ". . . . ."
-    "frontendhead separator backendhead separator-2 varioshead"
-    "frontendtext separator backendtext separator-2 variostext"
-    "frontendtechs separator backendtechs separator-2 variostechs"
-    ". . . . .";
-  align-items: center;
-  justify-items: center;
+  margin: 2em;
+  padding: 0 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 70vh;
 }
 
-.frontend-head {
-  grid-area: frontendhead;
-}
-.frontend-text {
-  grid-area: frontendtext;
-}
-.frontend-techs {
-  grid-area: frontendtechs;
+.skill-section {
+  max-width: 300px;
+  text-align: center;
+  margin: auto 1em;
 }
 
-.backend-head {
-  grid-area: backendhead;
-}
-.backend-text {
-  grid-area: backendtext;
-}
-.backend-techs {
-  grid-area: backendtechs;
-}
-
-.varios-head {
-  grid-area: varioshead;
-}
-.varios-text {
-  grid-area: variostext;
-}
-.varios-techs {
-  grid-area: variostechs;
-}
-
-.separator {
-  grid-area: separator;
-  background: #663399;
-  width: 4px;
-  margin: 0;
-  margin-top: 10%;
-}
-.separator-2 {
-  grid-area: separator-2;
-  background: #663399;
-  width: 4px;
-  margin: 0;
-}
-
-.skills-backend {
-  grid-area: backend;
-}
-.skills-varios {
-  grid-area: varios;
-}
-
-.skills-container ul {
+.skill-section ul {
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;
   color: #757575;
-  width: 300px;
-  font-size: 22px;
-  margin-bottom: 3em;
+  margin: 1em 0.4em;
+  padding: 0;
   justify-content: space-between;
 }
 
-.skills-container h1 {
-  margin-top: 2em;
+.skill-section li {
+  margin: 0.3em;
+  font-weight: bold;
 }
 
-.skills-container li {
-  margin: 0 0.6em;
-}
-
-.skill-section-container p {
-  margin: 40px 0;
+.skill-section p {
+  margin: 1em;
   color: #757575;
 }
 
-.skills-container > * {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 300px;
+@media (min-width: 1090px) {
+  .skill-section {
+    margin-top: 2em;
+  }
+  .skill-section > * {
+    margin: 4em auto;
+  }
 }
